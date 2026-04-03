@@ -1,6 +1,6 @@
 {
   "name": "GIDEON Mobile Phone Offline",
-  "short_name": "GIDEON Mobile",
+  "short_name": "GIDEON",
   "description": "Assistente pessoal offline no celular com WebLLM",
   "start_url": "./index.html",
   "display": "standalone",
