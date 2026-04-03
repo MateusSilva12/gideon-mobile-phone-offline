@@ -1,0 +1,11 @@
+{
+  "name": "GIDEON Mobile Phone Offline",
+  "short_name": "GIDEON Mobile",
+  "description": "Assistente pessoal offline no celular com WebLLM",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#071120",
+  "theme_color": "#071120",
+  "orientation": "portrait",
+  "icons": []
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+  <meta name="theme-color" content="#071120" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <title>GIDEON Mobile Offline</title>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div>
+        <h1>GIDEON</h1>
+        <p>IA local no celular</p>
+      </div>
+      <div class="status">
+        <span class="led" id="led"></span>
+        <span id="statusText">Inicializando...</span>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="orb-wrap">
+        <div class="orb" id="orb">
+          <div class="orb-glow"></div>
+          <div class="eye eye-left"></div>
+          <div class="eye eye-right"></div>
+          <div class="mouth" id="mouth"></div>
+        </div>
+        <p class="hint">Primeiro carregamento baixa o modelo. Depois pode usar offline.</p>
+      </section>
+
+      <section class="controls">
+        <label for="modelSelect">Modelo</label>
+        <select id="modelSelect">
+          <option value="Llama-3.2-1B-Instruct-q4f32_1-MLC">Llama 3.2 1B (mais leve)</option>
+          <option value="Qwen2.5-1.5B-Instruct-q4f32_1-MLC">Qwen 2.5 1.5B (melhor equilíbrio)</option>
+        </select>
+
+        <button id="loadModelBtn">Baixar / Carregar modelo</button>
+      </section>
+
+      <section class="chat">
+        <div class="messages" id="messages"></div>
+
+        <div class="composer">
+          <textarea id="promptInput" placeholder="Digite sua dúvida..." rows="3"></textarea>
+          <div class="actions">
+            <button id="clearBtn" class="secondary">Limpar</button>
+            <button id="sendBtn">Enviar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
